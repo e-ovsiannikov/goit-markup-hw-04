@@ -138,6 +138,12 @@ body{
 /* ==========HERO=========== */
 .hero{
     background-color:var(--filling-color);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)
+        ), 
+        url(../images/hero/hero.jpg);
+    background-size: cover;
     padding: 200px 0;
 }
 .hero-title{
@@ -258,7 +264,24 @@ body{
     color: var(--text-color);
     margin-bottom: 30px;
 }
+.social-list{
+    display: flex;
+    justify-content: center;
+    margin: 16px 32px 0;
+}
 /* ===============END TEAM================= */
+
+
+/* ===============CLIENTS================== */
+.clients-list{
+    display: flex;
+}
+
+.client-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 /* ===============FOOTER================= */
 .footer{
@@ -299,6 +322,47 @@ body{
 .footer-contact-link:focus{
     color: var(--accent-color);
 }
+
+.foot-title{
+    font-family: var(--font-famaly);
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+.foot-list {
+    display: flex;
+  }
+
+  .foot-social-item {
+    margin-right: 22px;
+  }
+  .foot-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    fill: #ffffff;
+    border-radius: 50% 50%;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .foot-social-link:hover,
+  .foot-social-link:focus {
+    fill: white;
+    background-color: var(--main-accent-color);
+  }
+
+  .foot-social-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .foot-block {
+    margin-left: 70px;
+  }
+
 /* ===============END FOOTER================= */
 
 
