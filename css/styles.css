@@ -84,11 +84,6 @@ body{
     align-items: center;
 }
 
-.header-contact{
-    display: flex;
-    align-items: center;
-}
-
 .logo-link{
     margin-right: 93px;
 }
@@ -107,6 +102,10 @@ body{
     color: var(--main-accent-color);
 }
 
+.header-contact{
+    display: flex;
+    align-items: center;
+}
 .menu-link,
 .contact-link {
     font-weight: 500;
@@ -131,6 +130,10 @@ body{
 .contact-item{
     margin-right: 50px;
 }
+.contact-items {
+    display: flex;
+  }
+
 /* ==========END HEADER=========== */
 
 
@@ -180,6 +183,10 @@ body{
 
 
 /* ==========ADVANTAGES=========== */
+/* .advantage-container {
+    display: flex;
+    align-items: center;
+  } */
 .advantages-list{
     display: flex;
     flex-basis: calc((100% - 120px) / 4);
@@ -196,6 +203,22 @@ body{
     color: var(--title-color);
     margin-bottom: 10px;
 }
+.advantage-title:not(:last-child) {
+    padding-bottom: 10px;
+  }
+  .advantage-items:not(:last-child) {
+    margin-right: 30px;
+  }
+  .advantage-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
 .description{
     line-height: 1.71;
     color:var(--text-color);
@@ -244,6 +267,8 @@ body{
     margin-left: 30px;
     margin-top: 30px;
     background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-img{
     margin-bottom: 30px;
@@ -262,12 +287,26 @@ body{
     line-height: 1.19;
     text-align: center;
     color: var(--text-color);
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 .social-list{
     display: flex;
     justify-content: center;
     margin: 16px 32px 0;
+}
+.social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    fill: #afb1b8;
+}
+.social-link:hover,
+.social-link:focus {
+    fill: white;
+    border-radius: 50% 50%;
+    background-color: var(--main-accent-color);
 }
 /* ===============END TEAM================= */
 
@@ -276,11 +315,32 @@ body{
 .clients-list{
     display: flex;
 }
-
 .client-link {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  
+  .client-link:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .client-link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+  }
+  
+  .client-link:hover,
+  .client-link:focus {
+    fill: var(--main-accent-color);
+    background-color: white;
+    border-color: var(--main-accent-color);
+  }
+  .clients-items:not(:last-child) {
+    margin-right: 30px;
   }
 
 /* ===============FOOTER================= */
@@ -321,6 +381,10 @@ body{
 .footer-contact-link:hover,
 .footer-contact-link:focus{
     color: var(--accent-color);
+}
+
+.foot-container{
+    display: flex;
 }
 
 .foot-title{
