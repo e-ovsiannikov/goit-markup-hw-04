@@ -126,7 +126,6 @@ body{
 .contact-link:hover,
 .contact-link:focus{
    color:  var(--main-accent-color);
-   fill: var(--main-accent-color);
 }
 .contact-item{
     margin-right: 50px;
@@ -135,9 +134,9 @@ body{
     display: flex;
   }
   .contact-icon{
-      margin-right: 10px;
+    fill: currentColor;
+    margin-right: 10px;
   }
-
 /* ==========END HEADER=========== */
 
 
