@@ -134,10 +134,8 @@ body{
 .contact-items {
     display: flex;
   }
-
-  .advantage-icon{
-    fill: currentColor;
-    margin-right: 10px;
+  .contact-icon{
+      margin-right: 10px;
   }
 
 /* ==========END HEADER=========== */
@@ -168,6 +166,7 @@ body{
     margin-bottom: 30px;
 }
 .hero-btn{
+    border: none;
     padding: 10px 32px;
     font-size: 16px;
     line-height: 1.87;
@@ -269,6 +268,10 @@ body{
     margin-top: -30px;
 }
 
+.team-list-content{
+    padding: 30px;
+}
+
 .team-list-item{
     margin-left: 30px;
     margin-top: 30px;
@@ -276,10 +279,6 @@ body{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-.team-img{
-    margin-bottom: 30px;
-}
-
 .name-title{
     font-weight: 500;
     font-size: 16px;
@@ -293,12 +292,11 @@ body{
     line-height: 1.19;
     text-align: center;
     color: var(--text-color);
-    /* margin-bottom: 30px; */
 }
 .social-list{
     display: flex;
     justify-content: center;
-    margin: 16px 32px 0;
+    margin-top: 20px;
 }
 .social-link{
     display: flex;
@@ -391,6 +389,7 @@ body{
 
 .foot-container{
     display: flex;
+    align-items: baseline;
 }
 
 .foot-title{
@@ -407,7 +406,7 @@ body{
   }
 
   .foot-social-item {
-    margin-right: 22px;
+    margin-right: 10px;
   }
   .foot-social-link {
     display: flex;
@@ -415,7 +414,7 @@ body{
     justify-content: center;
     width: 44px;
     height: 44px;
-    fill: #ffffff;
+    fill: var(--footer-color);
     border-radius: 50% 50%;
     background: rgba(255, 255, 255, 0.1);
   }
@@ -457,6 +456,7 @@ body{
     background-color: #F5F4FA;
     cursor: pointer;
     border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     padding: 6px 22px;
     border: none;
 }
